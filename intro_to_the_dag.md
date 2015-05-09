@@ -356,7 +356,7 @@ git branch --no-merged
   feature
 ```
 
-- So the feature branch is still yet to be merged. got it.
+- So the feature branch is still yet to be merged. Got it.
 
 - So let's go ahead and merge the feature branch into master. Make sure that you're already in master!
 

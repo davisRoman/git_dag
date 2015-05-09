@@ -99,6 +99,21 @@ $ git commit -m "adding a testing method"
 
 - What does your git graph look like now?
 
+```
+* 26d356a (HEAD, feature) adding a testing method
+* d1c6fcd (master) initial commit
+```
+
+- Let's make another change on the feature branch to reflect reality. Change the line we just added to:
+
+> look at all the testing I'm NOT doing
+
+- Commit your changes and show your git graph.
+```
+* 68e5a50 (HEAD, feature) adding a change to reflect reality
+* 26d356a adding a testing method
+* d1c6fcd (master) initial commit
+```
 
 
 

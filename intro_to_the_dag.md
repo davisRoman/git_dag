@@ -135,7 +135,9 @@ $ git commit -m "adding a testing method"
 
 > If you let this happen, it won't be a good day for you!
 
-- Therefore, it should be kept in prestine condition much all the time however simple cleanup is allowed. So go ahead and remove the space in helloworld.java so that it looks like the following:
+- Therefore, you need to `KEEP` the master branch in a prestine condition pretty much all the time however simple cleanup is generally allowed but in practice, this varies between organizations.
+
+- So go ahead and remove the space in helloworld.java so that it looks like the following:
 
 ```
 public class helloworld{

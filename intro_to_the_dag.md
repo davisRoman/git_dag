@@ -77,7 +77,7 @@ $ git checkout feature
 ```
 
 ```
-Switched to branch 'feature'
+- Go ahead and switch over to branch 'feature'
 ```
 
 - What does your git graph look like right now?

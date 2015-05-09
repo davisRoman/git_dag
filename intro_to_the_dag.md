@@ -294,7 +294,7 @@ Merge made by the 'recursive' strategy.
  create mode 100644 test.java
 ```
 
-- Now that our bugfix branch has been merge we should probably consider deleting the branch since we don't need it anymore but wait, why don't we ask git if this branch has been COMPLETELY merge, just in case.
+- Now that our bugfix branch has been merge we should probably consider deleting the branch since we don't need it anymore but wait, why don't we ask git if this branch has been COMPLETELY merged, just in case.
 
 ```
 $ git branch --merged
@@ -328,6 +328,8 @@ $ git branch -d bugfix
 ```
 Deleted branch bugfix (was de16ae8).
 ```
+
+> Note: If the branch was actually not merged, you'll get an error from git complaining that there are changes that you haven't brought over to master. If you insist on deleting this branch anyhow, use `-D` instead of `-d`
 
 - Print the graph again and compare.
 

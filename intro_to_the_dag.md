@@ -522,8 +522,9 @@ $ git blame helloworld.java
 ^d1c6fcd (Davis Roman 2015-05-09 07:09:40 -0400 7)       System.out.println("hellworld!")
 ^d1c6fcd (Davis Roman 2015-05-09 07:09:40 -0400 8)    }
 ^d1c6fcd (Davis Roman 2015-05-09 07:09:40 -0400 9) }
-
 ```
+### git diff
+
 ### git reset 
 #### mixed
 - You got changes in the staging directory and you wish to put them back in the workig directory

@@ -294,7 +294,7 @@ Merge made by the 'recursive' strategy.
  create mode 100644 test.java
 ```
 
-- Now that our bugfix branch has been merge we should probably consider deleting the branch since we don't need it anymore but wait, why don't we ask git if this branch has been COMPLETELY merged, just in case.
+- Now that our bugfix branch has been merged we should probably consider deleting the branch since we don't need it anymore but wait, why don't we ask git if this branch has been COMPLETELY merged, just in case.
 
 ```
 $ git branch --merged

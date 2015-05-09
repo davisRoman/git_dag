@@ -93,9 +93,11 @@ $ git log --graph --decorate --oneline --branches
 - Let's make a commit on our feature branch by adding the following to helloworld.java.
 
 ```
+...
 public void test(){
    System.out.println("look at all the testing I'm doing");
 }
+...
 ```
 
 - Commit your changes

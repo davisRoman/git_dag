@@ -504,11 +504,10 @@ Deleted branch feature (was 68e5a50).
 * d1c6fcd initial commit
 ```
 
-What else can we talk about?
+##What else can we talk about?
 
-- git reset 
-- git reflog
-- detached head state 
+### git reset 
+### detached head state 
 ```
 *   60f04d4 (HEAD, master) resolving merge issue
 |\  
@@ -584,7 +583,30 @@ $ git checkout master
 ```
 - Things are golden again.
 
+### git reflog
+- Git captures all of your commit activities. Commits that are not currently in use get removed after ~30 days.
 
+```
+$ git reflog
+```
+```
+60f04d4 HEAD@{0}: checkout: moving from e223b70b242e2116c9a697e649a3eca818405b6
+e223b70 HEAD@{1}: checkout: moving from de16ae85305310299eb822b232a89800b942f47
+de16ae8 HEAD@{2}: checkout: moving from master to de16ae8
+60f04d4 HEAD@{3}: commit (merge): resolving merge issue
+6381175 HEAD@{4}: checkout: moving from feature to master
+68e5a50 HEAD@{5}: checkout: moving from master to feature
+6381175 HEAD@{6}: merge bugfix: Merge made by the 'recursive' strategy.
+29016b9 HEAD@{7}: commit: fixing spelling error
+e223b70 HEAD@{8}: checkout: moving from bugfix to master
+de16ae8 HEAD@{9}: commit: adding testing class
+3a77e9e HEAD@{10}: commit: adding one argument constructor
+e223b70 HEAD@{11}: checkout: moving from master to bugfix
+e223b70 HEAD@{12}: commit: simple cleanup
+d1c6fcd HEAD@{13}: checkout: moving from feature to master
+68e5a50 HEAD@{14}: commit: adding a change to reflect reality
+26d356a HEAD@{15}: commit: adding a testing method
+```
 
 
 

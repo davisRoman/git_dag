@@ -303,6 +303,100 @@ git branch --no-merged
 
 - So the feature branch is still yet to be merged. got it.
 
+- So let's go ahead and merge the feature branch into master. Make sure that you're already in master!
 
+```
+$ git merge feature
+```
+```
+Auto-merging helloworld.java
+CONFLICT (content): Merge conflict in helloworld.java
+Automatic merge failed; fix conflicts and then commit the result.
+```
+- uh oh, we'll need to fix this before the merge can finish. What does git status say?
+```
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
 
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
 
+	both modified:   helloworld.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+- So the issue exists in helloworld.java. Let's look at the file.
+
+```
+public class helloworld{
+   public helloworld(){
+      // Nothing too useful here
+   }
+<<<<<<< HEAD
+   public helloworld(int num){
+      // I do cool stuff
+=======
+   public void test(){
+      System.out.println("look at all the testing I'm NOT doing");
+>>>>>>> feature
+   }
+   public static void main(String[] args){
+      System.out.println("helloworld!");
+   }
+}
+```
+- At this point, git sees that this file was changed in both branches. We'll need to help git decide what needs to be kept. Let's keep both methods and clean this up a bit.
+
+```
+public class helloworld{
+   public helloworld(){
+      // Nothing too useful here
+   }
+   public helloworld(int num){
+      // I do cool stuff
+   }
+   public void test(){
+      System.out.println("look at all the testing I'm NOT doing");
+   }
+   public static void main(String[] args){
+      System.out.println("helloworld!");
+   }
+}
+```
+
+```
+$ git add helloworld.java
+$ git commit -m "resolving merge issue"
+```
+- What does our graph look like right now?
+```git
+*   60f04d4 (HEAD, master) resolving merge issue
+|\  
+| * 68e5a50 (feature) adding a change to reflect reality
+| * 26d356a adding a testing method
+* |   6381175 Merge branch 'bugfix'
+|\ \  
+| * | de16ae8 adding testing class
+| * | 3a77e9e adding one argument constructor
+* | | 29016b9 fixing spelling error
+|/ /  
+* | e223b70 simple cleanup
+|/  
+* d1c6fcd initial commit
+```
+
+- Is our feature branch fully checked in?
+```
+$ git branch --merged
+```
+```
+  feature
+* master
+```
+```
+$ git branch --no-merged
+```
+```
+  
+```

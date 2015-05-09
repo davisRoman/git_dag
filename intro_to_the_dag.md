@@ -400,3 +400,36 @@ $ git branch --no-merged
 ```
   
 ```
+- In retrospect, getting a merge conflict on the master branch is VERY BAD! Your other coworkers would have been very upset! How else could we have done this?
+
+- So now that the feature branch is merged, let's get rid of it.
+
+```
+$ git branch -d feature
+```
+
+```
+Deleted branch feature (was 68e5a50).
+```
+
+- display your graph and compare with the previous.
+
+
+```
+*   60f04d4 (HEAD, master) resolving merge issue
+|\  
+| * 68e5a50 adding a change to reflect reality
+| * 26d356a adding a testing method
+* |   6381175 Merge branch 'bugfix'
+|\ \  
+| * | de16ae8 adding testing class
+| * | 3a77e9e adding one argument constructor
+* | | 29016b9 fixing spelling error
+|/ /  
+* | e223b70 simple cleanup
+|/  
+* d1c6fcd initial commit
+```
+
+
+

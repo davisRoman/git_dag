@@ -508,7 +508,22 @@ Deleted branch feature (was 68e5a50).
 ```
 
 ##What else can we talk about?
+### git blame
+```
+$ git blame helloworld.java
+```
+```
+^d1c6fcd (Davis Roman 2015-05-09 07:09:40 -0400 1) public class helloworld{
+^d1c6fcd (Davis Roman 2015-05-09 07:09:40 -0400 2) 
+^d1c6fcd (Davis Roman 2015-05-09 07:09:40 -0400 3)    public helloworld(){
+^d1c6fcd (Davis Roman 2015-05-09 07:09:40 -0400 4)       // Nothing too useful here
+^d1c6fcd (Davis Roman 2015-05-09 07:09:40 -0400 5)    }
+^d1c6fcd (Davis Roman 2015-05-09 07:09:40 -0400 6)    public static void main(String[] ar
+^d1c6fcd (Davis Roman 2015-05-09 07:09:40 -0400 7)       System.out.println("hellworld!")
+^d1c6fcd (Davis Roman 2015-05-09 07:09:40 -0400 8)    }
+^d1c6fcd (Davis Roman 2015-05-09 07:09:40 -0400 9) }
 
+```
 ### git reset 
 #### mixed
 - You got changes in the staging directory and you wish to put them back in the workig directory

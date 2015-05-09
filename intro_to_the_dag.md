@@ -507,6 +507,26 @@ Deleted branch feature (was 68e5a50).
 ##What else can we talk about?
 
 ### git reset 
+#### mixed
+- You got changes in the staging directory and you wish to put them back in the workig directory
+```
+$ git reset HEAD
+```
+#### soft
+- You want to take a few commits from history and squash them together because maybe they're too granular in nature.
+``` 
+$ git reset --soft HEAD~5
+$ git commit -m "five new commits"
+```
+#### hard
+- Throws away commits that do not add value. You don't want to send, transmit or share them with others. So you can just blow it away from your commit history
+```
+git reset --hard HEAD~1
+```
+```
+HEAD is now at d1c6fcd initial commit
+```
+
 ### detached head state 
 - So if the HEAD pointer is synonymous with a branch, what does that make be in detached head state? Well, it’s simply a commit hash which isn’t pointed to by a tag or a branch. So, whenever you have checked out a non-referenced head, you end up with a detached head.
 ```

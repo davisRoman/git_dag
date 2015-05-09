@@ -119,7 +119,7 @@ $ git commit -m "adding a testing method"
 * d1c6fcd (master) initial commit
 ```
 
-- Let's make another change on the feature branch to reflect reality. Change the line we just added to:
+- Let's make another change on the feature branch to reflect reality. Change the line we just added:
 
 > look at all the testing I'm NOT doing
 

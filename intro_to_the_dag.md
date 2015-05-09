@@ -221,157 +221,74 @@ $ git status
 On branch master
 nothing to commit, working directory clean
 ```
-- Ok good, we're indeed on master
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Ok good, we're indeed on master. So let's merge the bugfix branch into master
+
+```
+$ git merge bugfix
+```
+-  If no merge conflicts are found, we'll immediately be thrown into an editor and asked to specify a commit message. We can just use the default.
+```
+Merge branch 'bugfix'
+
+# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+```
+- This was a simple merge. Great!
+```
+Auto-merging helloworld.java
+Merge made by the 'recursive' strategy.
+ helloworld.java | 3 +++
+ test.java       | 8 ++++++++
+ 2 files changed, 11 insertions(+)
+ create mode 100644 test.java
+ ```
+- Now that our bugfix branch has been merge we should probably consider deleting the branch since we don't need it anymore but wait, why don't we ask git if this branch has been COMPLETELY merge, just in case.
+```
+$ git branch --merged
+```
+```
+  bugfix
+* master
+```
+- Notice how bugfix appears on this list. So sure, let's delete it but before we do that let's print the graph.
+
+
+```
+*   6381175 (HEAD, master) Merge branch 'bugfix'
+|\  
+| * de16ae8 (bugfix) adding testing class
+| * 3a77e9e adding one argument constructor
+* | 29016b9 fixing spelling error
+|/  
+* e223b70 simple cleanup
+| * 68e5a50 (feature) adding a change to reflect reality
+| * 26d356a adding a testing method
+|/  
+* d1c6fcd initial commit
+```
+- Go ahead and delete the bugfix branch
+```
+$ git branch -d bugfix
+```
+```
+Deleted branch bugfix (was de16ae8).
+```
+- Print the graph again and compare.
+```
+*   6381175 (HEAD, master) Merge branch 'bugfix'
+|\  
+| * de16ae8 adding testing class
+| * 3a77e9e adding one argument constructor
+* | 29016b9 fixing spelling error
+|/  
+* e223b70 simple cleanup
+| * 68e5a50 (feature) adding a change to reflect reality
+| * 26d356a adding a testing method
+|/  
+* d1c6fcd initial commit
+```
 
 

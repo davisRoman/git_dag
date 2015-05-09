@@ -131,7 +131,9 @@ $ git commit -m "adding a testing method"
 * d1c6fcd (master) initial commit
 ```
 
-- Let's switch back to our master branch. We never want to go all out on master. It should be prestine pretty much all the time but simple cleanup. So go ahead and remove the space in your application so that it looks like the following:
+- Let's switch back to our master branch. The master branch is generally shared among all developers in our organization. We don't want to introduce bugs otherwise we'll end up getting in everyones way. 
+> If you let this happen, it won't be a good day for you!
+- Therefore, it should be kept in prestine condition much all the time however simple cleanup is allowed. So go ahead and remove the space in helloworld.java so that it looks like the following:
 
 ```
 public class helloworld{

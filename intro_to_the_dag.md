@@ -291,4 +291,18 @@ Deleted branch bugfix (was de16ae8).
 * d1c6fcd initial commit
 ```
 
+- So now that we know how to check for merged branches, how do I know what isn't completely merged into master?
+
+```
+git branch --no-merged
+```
+
+```
+  feature
+```
+
+- So the feature branch is still yet to be merged. got it.
+
+
+
 

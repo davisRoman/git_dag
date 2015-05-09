@@ -131,7 +131,7 @@ $ git commit -m "adding a testing method"
 * d1c6fcd (master) initial commit
 ```
 
-- Let's switch back to our master branch. The master branch is generally shared among all developers in our organization. We don't want to introduce bugs otherwise we'll end up getting in everyones way. 
+- Let's switch back to our master branch. The master branch is generally shared among all developers in our organization. We don't want to introduce bugs otherwise we'll end up getting in everyone's way. 
 
 > If you let this happen, it won't be a good day for you!
 

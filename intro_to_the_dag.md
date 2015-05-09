@@ -567,7 +567,7 @@ HEAD is now at e223b70... simple cleanup
 $ git checkout master
 ```
 - Look at the graph again:
-- 
+```
 *   60f04d4 (HEAD, master) resolving merge issue
 |\  
 | * 68e5a50 adding a change to reflect reality

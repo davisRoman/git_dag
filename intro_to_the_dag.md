@@ -1,7 +1,4 @@
-
-- mkdir ~/Desktop/gitdag
-- cd ~/Desktop/gitdag
-- create a git repo in this folder.
+- create a git repo.
 
 ```
 $ git init

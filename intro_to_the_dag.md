@@ -204,7 +204,7 @@ public class test{
 }
 ```
 
-- Save and commit your change.
+- Save and commit your change. Print your graph.
 
 
 ```

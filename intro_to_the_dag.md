@@ -369,7 +369,7 @@ CONFLICT (content): Merge conflict in helloworld.java
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-- uh oh, we'll need to fix this before the merge can finish. What does git status say?
+- uh oh, we'll need to fix this before the merge can finish. What does `git status` say?
 
 ```
 On branch master

@@ -8,7 +8,7 @@ $ git init
 Initialized empty Git repository in /Users/davis/Desktop/gitdag/.git/
 ```
 
-- Create a file called helloworld.java and insert the following
+- Create a file called helloworld.java and insert the following ( Please copy the entire file as is. Try not to modify )
 
 ```
 public class helloworld{

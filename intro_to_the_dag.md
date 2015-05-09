@@ -465,10 +465,10 @@ $ git branch --no-merged
   
 ```
 - Apparently not
----------------------
+
 
 - In retrospect, getting a merge conflict on the master branch is VERY BAD! Your other coworkers would have been very upset! How else could we have done this?
-----------------------
+
 - So now that the feature branch is merged, let's get rid of it.
 
 ```

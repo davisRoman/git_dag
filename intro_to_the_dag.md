@@ -83,7 +83,7 @@ Switched to branch 'feature'
 - What does your git graph look like right now?
 
 ```
-git log --graph --decorate --oneline --branches
+$ git log --graph --decorate --oneline --branches
 ```
 
 ```

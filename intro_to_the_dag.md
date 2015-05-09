@@ -169,7 +169,8 @@ git checkout -b bugfix
 
 - It automatically created the branch and switched over to a new branch 'bugfix'
 
-- Oops forgot to add my one argument constructor. Add the following to hellworld.java and commit
+- Oops I see the issue! We forgot to add my one argument constructor. 
+- Add the following to hellworld.java and commit:
 
 ```
    ...

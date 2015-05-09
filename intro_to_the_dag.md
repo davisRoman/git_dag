@@ -167,7 +167,7 @@ public class helloworld{
 git checkout -b bugfix
 ```
 
-Switched to a new branch 'bugfix'
+- It automatically created the branch and switched over to a new branch 'bugfix'
 
 - Oops forgot to add my one argument constructor. Add the following to hellworld.java and commit
 

@@ -509,6 +509,84 @@ What else can we talk about?
 - git reset 
 - git reflog
 - detached head state 
+```
+*   60f04d4 (HEAD, master) resolving merge issue
+|\  
+| * 68e5a50 adding a change to reflect reality
+| * 26d356a adding a testing method
+* |   6381175 Merge branch 'bugfix'
+|\ \  
+| * | de16ae8 adding testing class
+| * | 3a77e9e adding one argument constructor
+* | | 29016b9 fixing spelling error
+|/ /  
+* | e223b70 simple cleanup
+|/  
+* d1c6fcd initial commit
+```
+- The HEAD pointer is currently at the tip of master but I'm interested in looking at the state of `simple cleanup`
+```
+$ git checkout e223b70
+```
+- You'll immediately get the following:
+```
+Note: checking out 'e223b70'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b new_branch_name
+
+HEAD is now at e223b70... simple cleanup
+```
+- print the graph to see what's going on
+
+```
+*   60f04d4 (master) resolving merge issue
+|\  
+| * 68e5a50 adding a change to reflect reality
+| * 26d356a adding a testing method
+* |   6381175 Merge branch 'bugfix'
+|\ \  
+| * | de16ae8 adding testing class
+| * | 3a77e9e adding one argument constructor
+* | | 29016b9 fixing spelling error
+|/ /  
+* | e223b70 (HEAD) simple cleanup
+|/  
+* d1c6fcd initial commit
+```
+- Do you see where HEAD is at? It's currently not pointing at the tip of a branch. While this is fine for browsing around to see the state at that commit. You cannot commit unless you wish to create a seperate branch at this point!
+
+- In order to go back, use:
+```
+$ git checkout master
+```
+- Look at the graph again:
+- 
+*   60f04d4 (HEAD, master) resolving merge issue
+|\  
+| * 68e5a50 adding a change to reflect reality
+| * 26d356a adding a testing method
+* |   6381175 Merge branch 'bugfix'
+|\ \  
+| * | de16ae8 adding testing class
+| * | 3a77e9e adding one argument constructor
+* | | 29016b9 fixing spelling error
+|/ /  
+* | e223b70 simple cleanup
+|/  
+* d1c6fcd initial commit
+```
+- Things are golden again.
+
+
+
+
 
 
 

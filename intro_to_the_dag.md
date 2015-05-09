@@ -524,7 +524,19 @@ $ git blame helloworld.java
 ^d1c6fcd (Davis Roman 2015-05-09 07:09:40 -0400 9) }
 ```
 ### git diff
-
+```
+diff --git a/helloworld.java b/helloworld.java
+index 1933e90..a69f3a6 100644
+--- a/helloworld.java
++++ b/helloworld.java
+@@ -1,5 +1,5 @@
+ public class helloworld{
+-   /// adding a comment!
++   /// adding a comment!!
+    public helloworld(){
+       // Nothing too useful here
+    }
+```
 ### git reset 
 #### mixed
 - You got changes in the staging directory and you wish to put them back in the workig directory

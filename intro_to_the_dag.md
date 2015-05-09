@@ -70,7 +70,7 @@ $ git branch
 * master
 ```
 
-- However the start indicates that you're still in the master branch, so go ahead and checkout the feature branch
+- However the *star* indicates that you're still in the `master` branch, so go ahead and checkout the feature branch
 
 ```
 $ git checkout feature

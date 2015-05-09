@@ -525,6 +525,9 @@ $ git blame helloworld.java
 ```
 ### git diff
 ```
+git diff helloworld.java
+```
+```
 diff --git a/helloworld.java b/helloworld.java
 index 1933e90..a69f3a6 100644
 --- a/helloworld.java

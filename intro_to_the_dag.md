@@ -525,7 +525,7 @@ $ git blame helloworld.java
 ```
 ### git diff
 ```
-git diff helloworld.java
+$ git diff helloworld.java
 ```
 ```
 diff --git a/helloworld.java b/helloworld.java

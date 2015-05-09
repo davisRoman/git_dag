@@ -132,7 +132,9 @@ $ git commit -m "adding a testing method"
 ```
 
 - Let's switch back to our master branch. The master branch is generally shared among all developers in our organization. We don't want to introduce bugs otherwise we'll end up getting in everyones way. 
+
 > If you let this happen, it won't be a good day for you!
+
 - Therefore, it should be kept in prestine condition much all the time however simple cleanup is allowed. So go ahead and remove the space in helloworld.java so that it looks like the following:
 
 ```

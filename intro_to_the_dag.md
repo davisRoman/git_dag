@@ -469,6 +469,10 @@ $ git branch --no-merged
 
 - In retrospect, getting a merge conflict on the master branch is VERY BAD. Your coworkers would have been very upset! How else could we have done this?
 
+- Couldn't we have merged master into feature? 
+
+> Note: But as much as we fight it, it still happens. Have you heard of `continous integration`?
+
 - So now that the feature branch is merged, let's get rid of it.
 
 ```

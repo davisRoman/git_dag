@@ -48,16 +48,16 @@ create mode 100644 helloworld.java
 ```
 $ git log --graph --decorate --oneline --branches
 ```
+```
+* d1c6fcd (HEAD, master) initial commit
+```
+
+
 > Note: There are many ways to print the git graph. I've provided you with my set of config options that I like but you're welcome to change them. Also, it will become tedious to keep retyping this. Let's create an alias!
 ```
 git config --global alias.glg 'log --graph --decorate --oneline --branches'
 ```
 > Now you'll be able to use 'git glg' instead of the entire string.
-
-
-```
-* d1c6fcd (HEAD, master) initial commit
-```
 
 - It's ALWAYS a bad idea to develop a new feature on the master branch so let's create a feature branch
 

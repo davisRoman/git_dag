@@ -285,7 +285,7 @@ Merge branch 'bugfix'
 
 - This was a simple merge. Great!
 
-![mergebaby](../img/merge_baby.png)
+![mergebaby](img/merge_baby.png)
 
 ```
 Auto-merging helloworld.java
@@ -474,7 +474,7 @@ $ git branch --no-merged
 - Couldn't we have merged master into feature? 
 
 > Note: But as much as we fight it, it still happens. Have you heard of continous integration techniques?
-![continous Integration](../img/continuousIntegration.jpg)
+![continous Integration](img/continuousIntegration.jpg)
 - So now that the feature branch is merged, let's get rid of it.
 
 ```

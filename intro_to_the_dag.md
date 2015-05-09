@@ -508,6 +508,7 @@ Deleted branch feature (was 68e5a50).
 
 ### git reset 
 ### detached head state 
+- So, if a head is synonymous with a branch, what does that make a detached head? Well, it’s simply a commit hash which isn’t pointed to by a tag or a branch. So, whenever you have checked out a non-referenced head, you end up with a detached head
 ```
 *   60f04d4 (HEAD, master) resolving merge issue
 |\  

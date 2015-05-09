@@ -502,5 +502,12 @@ Deleted branch feature (was 68e5a50).
 * d1c6fcd initial commit
 ```
 
+What else can we talk about?
+
+- git reset 
+- git reflog
+- detached head state 
+
+
 
 

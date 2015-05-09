@@ -471,7 +471,7 @@ $ git branch --no-merged
 
 - Couldn't we have merged master into feature? 
 
-> Note: But as much as we fight it, it still happens. Have you heard of `continous integration`?
+> Note: But as much as we fight it, it still happens. Have you heard of continous integration techniques?
 
 - So now that the feature branch is merged, let's get rid of it.
 

@@ -115,136 +115,113 @@ $ git commit -m "adding a testing method"
 * d1c6fcd (master) initial commit
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Let's switch back to our master branch. We never want to go all out on master. It should be prestine pretty much all the time but simple cleanup. So go ahead and remove the space in your application so that it looks like the following:
+```
+public class helloworld{
+   public helloworld(){
+      // Nothing too useful here
+   }
+   public static void main(String[] args){
+      System.out.println("hellworld!");
+   }
+}
+```
+- Commit your change and display the graph
+```
+* e223b70 (HEAD, master) simple cleanup
+| * 68e5a50 (feature) adding a change to reflect reality
+| * 26d356a adding a testing method
+|/  
+* d1c6fcd initial commit
+```
+- Your boss now tells you that you need to drop everything and fix a field issue!
+- So let's make a bugfix branch
+```
+git checkout -b bugfix
+```
+Switched to a new branch 'bugfix'
+```
+- Oops forgot to add my one argument constructor. Add the following to hellworld.java and commit
+```
+   ...
+   public helloworld(int num){
+      // I do cool stuff
+   }
+   ...
+```
+- What does your graph look like now?
+```
+* 3a77e9e (HEAD, bugfix) adding one argument constructor
+* e223b70 (master) simple cleanup
+| * 68e5a50 (feature) adding a change to reflect reality
+| * 26d356a adding a testing method
+|/  
+* d1c6fcd initial commit
+```
+- But while on the bugfix branch, you decide that you also need a dedicated test class, test.java, so add the following:
+```
+public class test{
+   public test(){
+      // Nothing too useful here
+   }
+   public static void main(String[] args){
+      System.out.println("I <3 testing!");
+   }
+}
+```
+- Save and commit your change.
+```
+* de16ae8 (HEAD, bugfix) adding testing class
+* 3a77e9e adding one argument constructor
+* e223b70 (master) simple cleanup
+| * 68e5a50 (feature) adding a change to reflect reality
+| * 26d356a adding a testing method
+|/  
+* d1c6fcd initial commit
+```
+
+- Good Job, You've saved the day
+ 
+- So let's head back to the master branch. While on master, you realize that you spelled helloworld incorrectly. After the fix, helloworld.java should look like this:
+```
+public class helloworld{
+   public helloworld(){
+      // Nothing too useful here
+   }
+   public static void main(String[] args){
+      System.out.println("helloworld!");
+   }
+}
+```
+
+```
+$ git add .
+$ git commit -m "fixing spelling error"
+```
+
+- So what does my graph look like now?
+```
+* 29016b9 (HEAD, master) fixing spelling error
+| * de16ae8 (bugfix) adding testing class
+| * 3a77e9e adding one argument constructor
+|/  
+* e223b70 simple cleanup
+| * 68e5a50 (feature) adding a change to reflect reality
+| * 26d356a adding a testing method
+|/  
+* d1c6fcd initial commit
+```
+
+- You realize at this point that you should bring in the fixes from your bugfix branch. You'll need to perform a merge but in order to do this, you need to `already` be in the branch that you want the changes to be brought into.
+
+```
+$ git status
+```
+```
+On branch master
+nothing to commit, working directory clean
+```
+- Ok good, we're indeed on master
 
 
 

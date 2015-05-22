@@ -52,7 +52,7 @@ $ git log --graph --decorate --oneline --branches
 
 > Note: There are many ways to print the git graph. I've provided you with my set of config options that I like but you're welcome to change them. Also, it will become tedious to keep retyping this. Let's create an alias!
 ```
-git config --global alias.glg 'log --graph --decorate --oneline --branches'
+git config --global alias.glg 'log --graph --decorate --oneline --branches -all'
 ```
 > Now you'll be able to use 'git glg' instead of the entire string.
 
